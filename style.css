@@ -1,0 +1,264 @@
+*{margin: 0;
+    padding: 0;
+    }
+    body{
+        background-image:url(https://giffiles.alphacoders.com/220/220783.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;}
+        
+        
+    .logo{width: 100px;
+        margin-left: 390PX;}
+    
+    
+    
+    .content{
+        display
+        :flex;
+    }
+    
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+       
+    }
+    .slider img{
+        width: 400px;
+        float: right;
+        margin: 14px;
+        margin-right: 70px;
+        margin-left: 110px;
+        display: none;
+        border-radius: 25px;
+        margin-top: 0px;
+        background-color: #ffffff;
+       
+    }
+    
+    img.displaySlide{
+        display: block;
+    }
+    
+    .slider button{
+        position: absolute;
+        width: 40px;
+        border-radius: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 200px;
+       font-weight: bold;
+       color: #fff;
+       border: none;
+       background-color: rgba(128, 128, 128, 0.459);
+    
+       
+    }
+    .slider button.prev{
+       right: 0;
+       margin-right: 480px;
+    }
+    .slider button.next{
+        right: 0;
+        margin-right: 20px;
+    }
+    
+    .slider button:hover{
+        background-color: rgba(39, 39, 39, 0.575);
+        
+    }
+    
+    .text p{
+        margin-top: 210px;
+        margin-bottom: -250px;
+        margin-left: 100px;
+        color: rgb(255, 57, 90);
+        font-size: 25px;
+        
+    
+        
+    }
+    .text h2{
+        margin-top:250px;
+        margin-bottom: -200px;
+        margin-left: 130px;
+        color: #fff;
+        font-size: 30px;
+        
+    }
+    .text h1{
+        margin-top: 160px;
+        margin-bottom: -240px;
+        margin-left: 125px;
+        
+    }
+    
+    .boom{
+        margin-left: 300px;
+        margin-top: 300px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(255, 174, 201);
+        font-size:20px ;
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: 1px 2px #00000036;
+        display: inline;
+    }
+    .boom:hover{
+        background-color: rgb(253, 139, 158);
+        transform: translateX(2px);
+        transform: translateY(1px);
+        
+    }
+    .boom:active{
+        background-color: rgb(255, 113, 137);
+        transform: translateX(-2px);
+        transform: translateY(-1px);
+    }
+    
+    .slider{
+        float: none;
+    }
+     .t{
+        color: #fff;
+     }
+
+     .popup .overly{
+        background-image: url(https://media.tenor.com/x-GNqGaOblYAAAAi/transparent-background-balloons-background.gif);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+           /* background-size: cover;
+            background-repeat: no-repeat; */
+            z-index: 1;
+            display: none;
+        
+    }
+     .popup .con{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        transform: translate(-50%,-50%) scale(0);
+        z-index: 2;
+        margin-left: -50px;
+     }
+    
+     .popup.active .overly{
+        display: block;
+     }
+    .popup.active .con{
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+
+
+  
+
+
+
+     @media  screen and (max-width: 760px) { 
+
+        body{ 
+            background-image:url(https://giffiles.alphacoders.com/220/220783.gif);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 105vh;}
+       
+    
+        .logo{margin-left: 110px;}
+    
+        .text h1{
+            margin-top: 48px;
+            margin-bottom: -240px;
+            margin-left: 80px;
+            font-size: 37px;
+            display: flex;
+            
+        }
+    
+        .text p{
+            margin-top: 210px;
+            margin-bottom: -250px;
+            margin-left: 70px;
+            color: rgb(255, 57, 90);
+            font-size: 20px; 
+             display: flex;
+            
+        
+            
+        }
+        .text h2{
+            margin-top:250px;
+            margin-bottom: -200px;
+            margin-left: 150px;
+            color: #fff;
+            font-size: 30px;
+            display: flex;}
+    
+            .boom{
+                margin-left: 160px;
+                margin-top: 280px;
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(255, 174, 201);
+                font-size:20px ;
+                color: #fff;
+                width: 100px;
+                height: 45px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                box-shadow: 1px 2px #00000036;
+                
+            }
+            .content{
+                display: grid;
+                justify-content: center;
+                
+            }
+    
+            .slider img{
+                width: 200px;
+                margin-top: 30px;
+              
+                
+
+            }
+            .slider button.prev{
+                left: 0;
+               margin-top: 115px;
+               margin-left: 57px;
+                
+             }
+             .slider button.next{
+                 right: 0;
+                 margin-top: 115px;
+               
+             }
+
+             .popup .con{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 300px;
+                transform: translate(-50%,-50%) scale(0);
+                z-index: 2;
+                margin-left: -80px;
+             }
+            
+
+     }
+    
+                
